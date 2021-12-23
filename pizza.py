@@ -29,7 +29,7 @@ class BasePizza:
                        'mozzarella': int(200 * self.SIZE[self._size])}
         self._ingredients = ingredients
 
-    def dict(self) -> Dict[str, Union[Dict[str, Union[int, float]], str]]:
+    def dict(self) -> Dict[str, int]:
         """Рецепт и размер пиццы
         """
         return self._ingredients
@@ -42,7 +42,6 @@ class BasePizza:
             raise TypeError("Можно сравнить только с пиццей!")
 
     def __str__(self):
-        text = super().__str__()
         return self.__class__.__name__
 
 

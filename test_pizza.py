@@ -30,7 +30,7 @@ def test_wrong_equal():
 def test_equality():
     assert Pepperoni() == Pepperoni()
     assert Margherita() != Hawaiian()
-    assert Margherita(size="L") != Margherita(size="XL")
+    assert Margherita(size='L') != Margherita(size='XL')
 
 
 def test_ingredients():
